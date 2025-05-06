@@ -103,6 +103,32 @@ MONGO_URI=mongodb://localhost:27017/your-db
 
 ---
 
+## 📝 Logging Setup
+
+This project uses Winston for structured logging. Logs are written to files in the `logs` directory:
+
+```bash
+mkdir logs  # Create the logs directory
+```
+
+The following log files will be automatically created:
+
+- `logs/error.log` - For error level logs
+- `logs/combined.log` - For all logs (info, warn, error)
+
+Note: The `logs` directory is included in `.gitignore` to prevent log files from being committed to version control.
+
+Directory structure for logs:
+
+```
+project-root/
+└── logs/
+    ├── error.log
+    └── combined.log
+```
+
+---
+
 ## 🧹 Code Quality
 
 This project uses ESLint and Prettier for code quality and formatting:
@@ -120,12 +146,15 @@ npm run format
 ## 🔍 API Documentation
 
 ### Health Check
+
 ```
 GET /api/health
 ```
+
 Returns server status information.
 
 Response:
+
 ```json
 {
   "status": "ok",
