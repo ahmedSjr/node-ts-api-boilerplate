@@ -1,4 +1,3 @@
-// Entry point for the application
 import express, { Request, Response, NextFunction } from "express";
 import logger from "./utils/logger";
 import morganMiddleware from "./middleware/morganMiddleware";
