@@ -12,10 +12,8 @@ A modern, production-ready boilerplate for building **Node.js APIs** using **Typ
 - 🛡️ **Security First** — Built-in protection with `helmet`, `cors`, and environment configs
 - 📜 **Advanced Logging** — Structured logging with `winston` and HTTP logging via `morgan`
 - 🧹 **Code Quality** — ESLint + Prettier setup for consistent code style
-- 📁 **Clean Architecture** — Modular design with clear separation of concerns
+- 📁 **Clean Architecture** — Modular design for easy scaling
 - 🔄 **Hot Reload** — Fast development with `nodemon`
-- 🗃️ **MongoDB Integration** — Ready-to-use MongoDB setup with Mongoose
-- 🎯 **Type Safety** — Full TypeScript support with custom type definitions
 
 ---
 
@@ -26,21 +24,13 @@ project-root/
 ├── src/
 │   ├── app.ts              # Express app configuration
 │   ├── server.ts           # Server entry point
-│   ├── config/            # Configuration files
-│   ├── controllers/       # Request handlers
-│   ├── middleware/        # Custom Express middlewares
-│   ├── models/           # Mongoose models
-│   ├── routes/           # API routes
-│   ├── services/         # Business logic
-│   ├── templates/        # Email or view templates
-│   ├── types/           # TypeScript type definitions
-│   └── utils/           # Utility functions and helpers
-├── logs/                # Application logs (git-ignored)
-├── .env.example         # Environment variables template
-├── package.json         # Dependencies and scripts
-├── tsconfig.json       # TypeScript configuration
-├── eslint.config.js    # ESLint configuration
-└── .gitignore         # Git ignore rules
+│   ├── middleware/         # Custom Express middlewares
+│   └── utils/             # Utility functions and helpers
+├── .env.example           # Environment variables template
+├── package.json           # Dependencies and scripts
+├── tsconfig.json         # TypeScript configuration
+├── eslint.config.js      # ESLint configuration
+└── .gitignore           # Git ignore rules
 ```
 
 ---
@@ -51,7 +41,7 @@ project-root/
 
 - Node.js 22.x or later
 - npm 10.x or later
-- MongoDB 7.x or later
+- MongoDB (if using database features)
 
 ### 1. Clone the Repository
 
@@ -173,3 +163,7 @@ Response:
 ```
 
 ---
+
+## 📜 License
+
+MIT
